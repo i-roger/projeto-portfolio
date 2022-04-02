@@ -5,10 +5,7 @@
 }
 
 body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+
   background: #161623;
 }
 
@@ -39,10 +36,17 @@ body::after{
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1200px;
   flex-wrap: wrap;
   z-index: 1;
 
+  .card:hover{
+    z-index: 1;
+    transform: scale(1.5);
+    transition: 1s;
+    background-color:#0091ff;
+    // box-shadow: 0 0 0.8em #0091ff;
+    box-shadow: 0 0 50px #0091ff;
+  }
   .card{
       position: relative;
       width: 280px;
@@ -57,6 +61,7 @@ body::after{
       display: flex;
       justify-content: center;
       align-items: center;
+      transition: 1s;
 
       .content{
           padding: 20px;

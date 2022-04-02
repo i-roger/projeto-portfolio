@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.scss';
+import Header from './components/menu/Header.js'; /* Menu Completo!!! */
+import './components/menu/menu-style.scss'; /* Folha de estilo do MENU */
 
 function App() {
   return (
     <div className="App">
-      <header></header>
+      <Header/>
       <div className="container">
         <div className="card">
           <div className="content">
