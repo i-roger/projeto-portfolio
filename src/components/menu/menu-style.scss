@@ -2,7 +2,22 @@ header{
     display:flex;
     justify-content:end;
     height:35vh;
-  
+    
+    .titlepage{
+      position: relative;
+      display:flex;
+      align-items: center;
+        h1{
+          color: #fff;
+          font-size: 3em;
+          box-shadow: 0 0 .48em rgba(0, 0, 0, 0.5);
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          -webkit-backdrop-filter: blur(10px);
+          padding: .2em;
+          border-radius: .8em;
+        }
+      }
     
   
     .nav{
@@ -38,6 +53,8 @@ header{
           color: #fff;
           padding: 4px 0;
           transition: 0.5s;
+
+          text-shadow: 0 0 .48em rgba(0, 0, 0, 0.48);
         }
         a::after{
           position: absolute;
@@ -66,12 +83,22 @@ header{
 
   // Responsividade do menu
 
-  @media (max-width:920px){
-    .menu-items{
+@media (max-width:920px){
+  header{
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    .titlepage{
+      margin-bottom: 2em;
+    }
+  }
+
+  .menu-items{
       width:50vw !important;
     }
 
-    li{
+  li{
       width:30vw !important;
     }
   }
